@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brain VR 3D</title>
+
+    <!-- Insert this script -->
+    <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.0.js"></script>
+</head>
+
+<body>
+   <div class=".card1">Cerebro VR 3D.
+<div class="sketchfab-embed-wrapper"> <iframe title="Anatomy of the Human Brain" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4870387fd52b4706a87b1f3337356579/embed?autostart=1&annotations_visible=1"> </iframe> </div>
+            
+        <div class=".card2"> Neuronas VR 3D.
+        <div class="sketchfab-embed-wrapper"> <iframe title="Neurons" frameborder="0"  allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/20e930a5fae5457fa6d1738afa00c7bb/embed?autostart=1&annotations_visible=1"> </iframe> </div>
+                    
+
+    <!-- Initialize the viewer -->
+    <script type="text/javascript">
+    var iframe = document.getElementById( 'api-frame' );
+    var uid = '7w7pAfrCfjovwykkEeRFLGw5SXS';
+    var client = new Sketchfab( iframe );
+    client.init( uid, {
+        success: function onSuccess( api ){
+            api.start();
+            api.addEventListener( 'viewerready', function() {
+
+                // API is ready to use
+                // Insert your code here
+                console.log( 'Viewer is ready' );
+
+            } );
+        },
+        error: function onError() {
+            console.log( 'Viewer error' );
+        }
+    } );
+    </script>
+  
+        
+</body>
+</html>
